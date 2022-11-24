@@ -15,7 +15,6 @@ def generatePass():
     print(a)
     label.config(text=a)
 
-
 root = Tk()
 
 root.title("Generador de Password")
@@ -24,9 +23,6 @@ root.geometry('500x500')    #1°ancho y 2°alto
 
 root.resizable(0,0)
 
-
-
-
 my_button=Button(root, text='Generar',font='arial 15 bold', command=generatePass).pack()     
 my_label=Label(root,text='').pack()
 exit_button=Button(root, text='Salir', font='arial 15 bold' ,command=root.destroy).pack()
@@ -34,6 +30,5 @@ my_label=Label(root,text='').pack()
 label_et=Label(root,text="Este es el password : ").pack()
 label=Label(root, text="",font='arial 15 bold')
 label.pack()
-
 
 root.mainloop()
